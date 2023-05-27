@@ -7,8 +7,39 @@
 
 body{
     background-color: white;
+}
+
+
+
+
+@media (min-width: 1280px){
+body {
     padding-left: 9.375rem;
     padding-right: 9.375rem;
+}}
+
+@media (min-width: 1024px){
+body {
+    padding-left: 6.25rem;
+    padding-right: 6.25rem;
+}}
+@media (min-width: 768px){
+body {
+    padding-left: 3.75rem;
+    padding-right: 3.75rem;
+}
+}
+
+@media (min-width: 520px){
+body {
+    padding-left: 2.8125rem;
+    padding-right: 2.8125rem;
+}
+}
+
+.app-section-horz-padding {
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
 }
 
 .header-top-padding{
@@ -132,12 +163,6 @@ body{
     font-weight: lighter;
 }
 
-.sectio3-grid{
-    grid-template-columns: repeat(2, minmax(0px, 1fr));
-    gap: 1.25rem;
-    display: grid;
-    margin-top: 5rem;
-}
 .grid1{
     background-size: cover;
     background-position: 100% 100%;
@@ -145,20 +170,15 @@ body{
     padding-right: 3.75rem;
     padding-bottom: 8rem !important;
     padding-top: 5rem;
+    margin-bottom: 10px;
+    margin-top: 5rem;
     --tw-text-opacity: 1;
     color: rgba(255,255,255,var(--tw-text-opacity));
     border-radius: 0.9375rem;
     width: 100%;
     grid-column: 1 / -1;
 }
-.grid2{
-    background-size: cover;
-    background-position: 100% 100%;
-    padding: 3.75rem;
-    padding-bottom: 20rem!important;
-    border-radius: 0.9375rem;
-    width: 100%;
-}
+
 .directpay{
     --tw-text-opacity: 1;
     color: rgba(0,0,0,var(--tw-text-opacity));
@@ -176,3 +196,52 @@ body{
     font-size: 1.125rem;
     font-weight: lighter;
 }
+@media (min-width: 1024px){
+.lg\:grid-cols-partners-lg {
+    grid-template-columns: repeat(auto-fit,minmax(220px,1fr));
+}
+}
+
+@media (min-width: 768px){
+.md\:grid-cols-2 {
+    grid-template-columns: repeat(2,minmax(0,1fr));
+}}
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .flex-item-left {
+    background-size: cover;
+    background-position: 100% 100%;
+    padding: 3.75rem;
+    padding-bottom: 20rem!important;
+    border-radius: 0.9375rem;
+    flex: 45%;
+    
+  }
+  
+  .flex-item-right {
+    background-size: cover;
+    background-position: 100% 100%;
+    padding: 3.75rem;
+    padding-bottom: 20rem!important;
+    border-radius: 0.9375rem;
+    flex: 45%;
+   
+  }
+  
+  /* Responsive layout - makes a one column-layout instead of a two-column layout */
+  @media (max-width: 800px) {
+    .flex-item-right, .flex-item-left {
+      flex: 90%;
+      margin-left: 0px;
+      margin-right: 0px;
+
+    }
+    .flex-item-right{
+        margin-top: 10px;
+    }
+  }
