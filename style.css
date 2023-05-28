@@ -8,39 +8,46 @@
 body{
     background-color: white;
 }
+.app-section-horz-padding {
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+}
 
 @media (max-width: 1413px){
-body {
+.app-section-horz-padding  {
     padding-left: 9.375rem;
     padding-right: 9.375rem;
 }}
 
+@media (max-width: 2460px){
+    .app-section-horz-padding  {
+        padding-left: 9.375rem;
+        padding-right: 9.375rem;
+    }}
+
 @media (max-width: 1024px){
-body {
+.app-section-horz-padding  {
     padding-left: 6.25rem;
     padding-right: 6.25rem;
 }}
 @media (max-width: 768px){
-body {
+.app-section-horz-padding  {
     padding-left: 3.75rem;
     padding-right: 3.75rem;
 }
 }
 
 @media (max-width: 520px){
-body {
+.app-section-horz-padding  {
     padding-left: 2.8125rem;
     padding-right: 2.8125rem;
 }
 }
 
-.app-section-horz-padding {
-    padding-left: 1.25rem;
-    padding-right: 1.25rem;
-}
+
 
 .header-top-padding{
-    padding-bottom: 24px;
+    padding-bottom: 2px;
     padding-top: 24px;
 }
 
@@ -64,6 +71,18 @@ body {
     display: inline-block;
     font-size: 20px;
     margin-right: 15px;
+  }
+  .signup-button {
+    color: #fff;
+    display: inline-block;
+    background-color: #0055BA;
+    font-size: .95em;
+    padding: 1rem 1.5rem;
+    border-radius: 10px;
+    align-items: center;
+    text-align: center;
+    line-height: 1;
+    font-weight: bold;
   }
 
   .headerbutton {
@@ -229,9 +248,7 @@ body {
   .section4-div{
     margin-top: 5.5rem;
     margin-bottom: 9.375rem;
-    max-width: 75rem;
-    margin-left: auto;
-    margin-right: auto;
+    
   }
 
   .app-h2-text{
@@ -380,6 +397,21 @@ body {
         height: 1.5rem
     }
 }
+.phone-menu{
+    display: none;
+}
+
+@media (max-width: 830px){
+    .nav{
+        display: none;
+    }
+    .signup-button{
+        display: none;
+    }
+    .phone-menu{
+        display: inline;
+    }
+}
 
 .testimony-person{
     align-items: center;
@@ -402,3 +434,124 @@ body {
     line-height: 1rem;
     font-weight: lighter;
 }
+
+/*section */
+.section7-div{
+    padding-top: 100px;
+    padding-bottom: 6.25rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0px;
+    background-color: black;
+}
+.section7-title{
+    text-align: center;
+    color:white ;
+    margin-bottom: 0.9375rem;
+    line-height: 1.15!important;
+}
+.section7-subtitle{
+    text-align: center;
+    color:white ;
+    font-weight: lighter;
+    line-height: 1.375!important;
+    max-width: 32rem;
+}
+
+.section7buttons{
+    align-items: center;
+    margin-top: 3.125rem;
+    display: flex;
+}
+
+@media (min-width: 768px){
+    .section7buttons {
+    margin-top: 3.125rem;
+}
+}
+
+
+@media (min-width: 520px){
+    .section7buttons {
+    margin-top: 2.5rem;
+}
+}
+
+.section8-div{
+    padding-top: 80px;
+    padding-bottom: 80px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    border-top: 1px solid gray;
+    --tw-divide-opacity: 1;
+    border-color: rgba(48,48,48,var(--tw-divide-opacity));
+    gap: 0.5em;
+    background-color: black;
+}
+
+.each-sec{
+    align-items: start;
+    flex: 22%;
+    color: white;
+    flex-direction: column;
+}
+ /* Responsive layout - makes a one column-layout instead of a two-column layout */
+ @media (max-width: 800px) {
+    .each-sec {
+      flex: 45%;
+    }
+  }
+
+  .footer-text{
+    margin-top: 15px;
+    font-size: .9375rem;
+    font-weight: 500;
+    line-height: 1.25rem;
+  }
+  .section8-list-title{
+    font-weight: 500;
+    --tw-text-opacity: 1;
+    color: rgba(181,181,181,var(--tw-text-opacity));
+    line-height: 1.25rem;
+    font-size: .9375rem;
+    margin-bottom: 0.9375rem;
+  }
+
+  .last-section-div{
+    justify-content: space-between;
+    flex-direction: row;
+    border-top: 1px solid gray;
+    --tw-divide-opacity: 1;
+    border-color: rgba(48,48,48,var(--tw-divide-opacity));
+    display: flex;
+    align-items: start;
+    flex-wrap: wrap;
+    padding-top: 36px;
+    background-color: black;
+    padding-bottom: 100px;
+  }
+
+  .copyright{
+    margin-left: 2.5rem;
+    font-size: .9375rem;
+    font-weight: 500;
+    line-height: 1.25rem;
+    display: inline-block;
+    color: white;
+  }
+
+  .socials{
+    position: relative;
+    margin-right: 2.5rem;
+    font-size: .9375rem;
+    --tw-text-opacity: 1;
+    color: rgba(181,181,181,var(--tw-text-opacity));
+    font-weight: 500;
+    line-height: 1.25rem;
+    align-items: start;
+    display: inline-flex;
+    text-decoration: none;
+  }
