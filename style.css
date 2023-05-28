@@ -435,6 +435,133 @@ body{
     font-weight: lighter;
 }
 
+.carousel-div{
+    margin-top: 5rem;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    padding-bottom: 7.5rem;
+}
+
+.carousel-button-div{
+    align-items: center;
+    display: flex;
+}
+.button1{
+    --tw-text-opacity: 0.8;
+    --tw-bg-opacity: 0.8;
+    cursor: not-allowed;
+    width: 3.125rem;
+    height: 3.125rem;
+    outline: 2px solid transparent;
+    outline-offset: 2px;
+    font-weight: 500;
+    border-radius: 9999px;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    display: flex;
+    box-sizing: border-box;
+    -webkit-appearance: button;
+    background-image: none;
+    text-transform: none;
+    border: none;
+}
+.button2{
+    --tw-text-opacity: 0.8;
+    --tw-bg-opacity: 0.8;
+    cursor: pointer;
+    width: 3.125rem;
+    height: 3.125rem;
+    outline: 2px solid transparent;
+    outline-offset: 2px;
+    font-weight: 500;
+    border-radius: 9999px;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    display: flex;
+    box-sizing: border-box;
+    background-image: none;
+    text-transform: none;
+    border: none;
+    --tw-bg-opacity: 1;
+    color: white;
+    background-color: rgba(0,85,186,var(--tw-bg-opacity));
+}
+
+.dot-div{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+    display: flex;
+}
+
+.dot-circle{
+    --tw-bg-opacity: 1;
+    background-color: rgba(0,0,0,var(--tw-bg-opacity));
+    border-radius: 9999px;
+    width: 0.9375rem;
+    height: 0.9375rem;
+    cursor: pointer;
+}
+
+/*Section 6*/
+.section6-div{
+    background-size: cover;
+    padding-top: 9.375rem;
+    padding-bottom: 9.375rem;
+}
+
+.powerful-api-div{
+    margin-top: 5rem;
+    padding-left: 3.75rem;
+    padding-right: 3.75rem;
+    --tw-bg-opacity: 1;
+    background-color: rgba(255,255,255,var(--tw-bg-opacity));
+    border-radius: 0.9375rem;
+
+    padding-top: 5rem;
+}
+.feature-div{
+    padding-top: 16px;
+    padding-bottom: 80px;
+    display: flex;
+    flex-wrap: wrap;
+    
+    gap: 1em;
+   
+}
+.fixed-bottom {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    padding: 10px;
+    background-color: black;
+    border-radius: 100px;
+    cursor: pointer;
+    margin: 15px;
+  }
+.each-feature{
+    align-items: center;
+    justify-content: center;
+    flex: 30%;
+    color: black;
+    flex-direction: column;
+    background-color: white;
+    padding: 3.75rem;
+    border-radius: 0.9375rem;
+}
+ /* Responsive layout - makes a one column-layout instead of a two-column layout */
+ @media (max-width: 767px) {
+    .each-feature {
+      flex: 100%;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+
 /*section */
 .section7-div{
     padding-top: 100px;
